@@ -5,6 +5,7 @@
   - OrderReceipt.java: remove //        output.append(order.getCustomerLoyaltyNumber());
   - LineItem.java: remove super()
   - remove unuseful comment in OrderReceipt.java
+  - remove todo in OrderReceipt.java
 - Magic number
   - extract constant in OrderReceipt.java
 - Naming
