@@ -1,8 +1,9 @@
 ### CODE SMELL
 
 - Dead code
-  - remove //        output.append("Date - " + order.getDate();
-  - remove //        output.append(order.getCustomerLoyaltyNumber());
+  - OrderReceipt.java: remove //        output.append("Date - " + order.getDate();
+  - OrderReceipt.java: remove //        output.append(order.getCustomerLoyaltyNumber());
+  - LineItem.java: remove super()
 - Magic number
 - Naming
   - LineItem.java:double p
