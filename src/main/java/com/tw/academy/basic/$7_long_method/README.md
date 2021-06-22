@@ -9,3 +9,5 @@
   - LineItem.java:double p
 - Long method
 - Primitive obsession
+- Make field final
+  - LineItem.java make all field final
