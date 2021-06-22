@@ -14,4 +14,12 @@ public class Order {
     public List<LineItem> getLineItems() {
         return lineItems;
     }
+
+    public double calculateTotalSalesTax(double taxRate) {
+        return this.lineItems.stream().mapToDouble(e -> e.calculateSalesTax(taxRate)).sum();
+    }
+
+    public double calculateTotal(double taxRate){
+        return this.lineItems.stream().mapToDouble(LineItem::totalAmount).sum()+calculateTotalSalesTax(taxRate);
+    }
 }

@@ -4,6 +4,7 @@
   - OrderReceipt.java: remove //        output.append("Date - " + order.getDate();
   - OrderReceipt.java: remove //        output.append(order.getCustomerLoyaltyNumber());
   - LineItem.java: remove super()
+  - remove unuseful comment in OrderReceipt.java
 - Magic number
   - extract constant in OrderReceipt.java
 - Naming
