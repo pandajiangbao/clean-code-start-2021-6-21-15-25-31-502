@@ -1,16 +1,16 @@
 package com.tw.academy.basic.$7_long_method;
 
 public class Customer {
-    private final String customerName;
+    private final String name;
     private final String address;
 
-    public Customer(String customerName, String address) {
-        this.customerName = customerName;
+    public Customer(String name, String address) {
+        this.name = name;
         this.address = address;
     }
 
-    public String getCustomerName() {
-        return customerName;
+    public String getName() {
+        return name;
     }
 
     public String getAddress() {

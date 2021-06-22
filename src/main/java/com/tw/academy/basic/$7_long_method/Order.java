@@ -12,7 +12,7 @@ public class Order {
     }
 
     public String getCustomerName() {
-        return this.customer.getCustomerName();
+        return this.customer.getName();
     }
 
     public String getCustomerAddress() {
