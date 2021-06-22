@@ -6,7 +6,8 @@
   - LineItem.java: remove super()
 - Magic number
 - Naming
-  - LineItem.java:double p
+  - LineItem.java:p -> price
+  - OrderReceipt.java:o -> order
 - Long method
 - Primitive obsession
 - Make field final
