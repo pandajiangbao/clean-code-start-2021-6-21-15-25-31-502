@@ -11,3 +11,4 @@
 - Primitive obsession
 - Make field final
   - LineItem.java make all field final
+  - OrderReceipt.java make field final
