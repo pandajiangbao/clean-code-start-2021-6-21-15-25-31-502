@@ -10,6 +10,7 @@
   - OrderReceipt.java:o -> order
 - Long method
 - Primitive obsession
+  - extract Customer.java from Order.java
 - Make field final
   - LineItem.java make all field final
   - OrderReceipt.java make field final
