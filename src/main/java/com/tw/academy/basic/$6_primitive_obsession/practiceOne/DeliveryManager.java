@@ -19,24 +19,12 @@ public class DeliveryManager {
         return DeliverCenter.FOREIGN;
     }
 
-    private String getCity(String address) {
-        return address.substring(address.indexOf("省") + 1, address.indexOf("市"));
-    }
-
-    private String getProvince(String address) {
-        return address.substring(0, address.indexOf("省"));
-    }
-
-
-
     public void setToAddress(String toAddress) {
         this.toAddress = new Address(toAddress);
-//        this.toAddress = toAddress;
     }
 
 
     public void setFromAddress(String fromAddress) {
         this.fromAddress = new Address(fromAddress);
-//        this.fromAddress = fromAddress;
     }
 }
