@@ -26,22 +26,17 @@ public class OrderReceipt {
     public String printReceipt() {
         StringBuilder output = new StringBuilder();
 
-        // print headers
         printHeaders(output);
 
-        // print date, bill no, customer name
         printCustomerInfo(output);
 
-        // prints lineItems
         printLineItems(output);
 
         double totSalesTx = order.calculateTotalSalesTax(TAX_RATE);
         double tot = order.calculateTotal(TAX_RATE);
 
-        // prints the state tax
         printStateTax(output, totSalesTx);
 
-        // print total amount
         printTotalAmount(output, tot);
         return output.toString();
     }
