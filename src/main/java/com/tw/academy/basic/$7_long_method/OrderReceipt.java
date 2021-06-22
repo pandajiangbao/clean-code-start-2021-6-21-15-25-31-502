@@ -16,7 +16,7 @@ public class OrderReceipt {
 
     //Deprecated
     public String printCustomerName() {
-        return order.getCustomerName();
+        return order.customer.getName();
     }
 
     //todo: rename -- Tom
@@ -27,8 +27,8 @@ public class OrderReceipt {
         output.append("======Printing Orders======\n");
 
         // print date, bill no, customer name
-        output.append(order.getCustomerName());
-        output.append(order.getCustomerAddress());
+        output.append(order.customer.getName());
+        output.append(order.customer.getAddress());
 
         // prints lineItems
         double totSalesTx = 0d;
