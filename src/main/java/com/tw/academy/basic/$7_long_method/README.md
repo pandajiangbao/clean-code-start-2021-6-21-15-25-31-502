@@ -12,6 +12,7 @@
   - LineItem.java:p -> price
   - OrderReceipt.java:o -> order
 - Long method
+  - extract method
 - Primitive obsession
   - extract Customer.java from Order.java
 - Make field final
