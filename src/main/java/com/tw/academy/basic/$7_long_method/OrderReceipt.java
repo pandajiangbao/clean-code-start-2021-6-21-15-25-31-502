@@ -11,6 +11,9 @@ public class OrderReceipt {
     public static final String TAB = "\t";
     public static final String LF = "\n";
     public static final double TAX_RATE = .10;
+    public static final String HEADERS = "======Printing Orders======";
+    public static final String SALES_TAX = "Sales Tax";
+    public static final String TOTAL_AMOUNT = "Total Amount";
     private final Order order;
 
     public OrderReceipt(Order order) {
@@ -54,11 +57,11 @@ public class OrderReceipt {
     }
 
     private void printTotalAmount(StringBuilder output, double tot) {
-        output.append("Total Amount").append(TAB).append(tot);
+        output.append(TOTAL_AMOUNT).append(TAB).append(tot);
     }
 
     private void printStateTax(StringBuilder output, double totSalesTx) {
-        output.append("Sales Tax").append(TAB).append(totSalesTx);
+        output.append(SALES_TAX).append(TAB).append(totSalesTx);
     }
 
     private void printCustomerInfo(StringBuilder output) {
@@ -67,6 +70,6 @@ public class OrderReceipt {
     }
 
     private void printHeaders(StringBuilder output) {
-        output.append("======Printing Orders======" + LF);
+        output.append(HEADERS + LF);
     }
 }
